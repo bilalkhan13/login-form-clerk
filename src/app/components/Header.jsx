@@ -1,0 +1,32 @@
+import Link from "next/link";
+import React from "react";
+
+const Header = () => {
+  return (
+    <>
+      <nav className="bg-blue-700 py-4 px-6 flex items.center justify-between mb-5">
+        <Link href="/">
+          <div className="text-lg uppercase font-bold text-white">
+            Clerk App
+          </div>
+          <div className="text-white">
+            <Link
+              href="sign-in"
+              className="text-gray-300 hover:text-white mr-4"
+            >
+              Sign In
+            </Link>
+            <Link
+              href="sign-up"
+              className="text-gray-300 hover:text-white mr-4"
+            >
+              Sign Up
+            </Link>
+          </div>
+        </Link>
+      </nav>
+    </>
+  );
+};
+
+export default Header;
