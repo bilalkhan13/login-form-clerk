@@ -1,5 +1,13 @@
 import Image from "next/image";
 
 export default function Home() {
-  return <>000</>
+  return (
+    <>
+      <h1 className="text-2xl font-bold mb-5">Welcome</h1>
+      <p className="mb-5">
+        This is a demo site by Bilal Ahmad Next.js & clerk tutorial. Go ahead
+        and sign up or sign in.
+      </p>
+    </>
+  );
 }
